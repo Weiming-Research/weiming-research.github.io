@@ -416,17 +416,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "projects-radioformer",
+          section: "News",},{id: "projects-radioformer",
           title: 'RadioFormer',
           description: "RadioFormer: One Physics-Guided Transformer to Unify 2D and 3D Radio Map Construction. Radio maps, which model wireless signal quality across different locations, are essential for efficient network planning and positioning. This project aims to generate high-quality 2D and 3D radio maps based on environmental layouts. However, traditional deep learning approaches often fail to understand the underlying physical principles of signal propagation, making them ineffective in unknown environments. Additionally, existing 3D generation models are typically too slow for real-time application.",
           section: "Projects",handler: () => {
