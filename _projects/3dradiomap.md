@@ -15,7 +15,7 @@ To address these limitations, we propose a comprehensive 3D Radio Map Dataset th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/radiomapcomparison.png" title="Comparison of Radio Map Datasets" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/radiomapcomparison.jpg" title="Comparison of Radio Map Datasets" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
