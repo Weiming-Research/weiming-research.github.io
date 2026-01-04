@@ -2,7 +2,7 @@
 layout: page
 title: RadioFormer
 description: A unified physics-guided framework for real-time 2D/3D radio map construction with 2500× inference speedup.
-img: assets/img/radioformer_cover.jpg
+img: assets/img/Urban3D-framework.png
 importance: 1
 category: work
 
