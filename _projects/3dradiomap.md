@@ -3,7 +3,7 @@ layout: page
 title: 3D Radio Map Dataset
 description: "3D Radio Map Dataset Generation
 Current publicly available datasets are limited to 2D radio maps and primarily provide RSS information. Proposed dataset addresses this limitation by constructing a 3D radio map with enriched data attributes."
-img: assets/img/ractracing.png
+img: assets/img/raytracing.png
 importance: 2
 category: work
 selected: true
@@ -15,7 +15,7 @@ To address these limitations, we propose a comprehensive 3D Radio Map Dataset th
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/radiomapcomparison.jpg" title="Comparison of Radio Map Datasets" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/radiomapcompasion.jpg" title="Comparison of Radio Map Datasets" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
