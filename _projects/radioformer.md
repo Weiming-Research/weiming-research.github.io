@@ -1,4 +1,4 @@
-<img width="1688" height="84" alt="image" src="https://github.com/user-attachments/assets/b1e99b42-a111-4b37-86da-9971ba446c4f" />---
+---
 layout: page
 title: RadioFormer
 description: RadioFormer: One Physics-Guided Transformer to Unify 2D and 3D Radio Map Construction.
