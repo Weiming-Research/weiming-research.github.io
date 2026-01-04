@@ -416,7 +416,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-radioformer",
+          section: "News",},{id: "projects-3d-radio-map-dataset",
+          title: '3D Radio Map Dataset',
+          description: "3D Radio Map Dataset Generation Current publicly available datasets are limited to 2D radio maps and primarily provide RSS information. Proposed dataset addresses this limitation by constructing a 3D radio map with enriched data attributes.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3dradiomap/";
+            },},{id: "projects-radioformer",
           title: 'RadioFormer',
           description: "RadioFormer: One Physics-Guided Transformer to Unify 2D and 3D Radio Map Construction. Radio maps, which model wireless signal quality across different locations, are essential for efficient network planning and positioning. This project aims to generate high-quality 2D and 3D radio maps based on environmental layouts. However, traditional deep learning approaches often fail to understand the underlying physical principles of signal propagation, making them ineffective in unknown environments. Additionally, existing 3D generation models are typically too slow for real-time application.",
           section: "Projects",handler: () => {
