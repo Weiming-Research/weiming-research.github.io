@@ -26,3 +26,28 @@ latest_posts:
 ---
 Welcome! I am a research assistant at WISELab, Chinese University of Hong Kong, Shenzhen.
 
+<h2>
+  <a href="{{ '/projects/' | relative_url }}" style="color: inherit;">selected projects</a>
+</h2>
+
+<!-- Selected Projects 内容区域 -->
+<div class="projects">
+  <!-- 创建一个 Grid 容器，强制让卡片竖向排列 -->
+  <div class="row row-cols-1"> 
+    
+    <!-- 获取所有 selected=true 的项目，并按 importance 排序 -->
+    {% assign selected_projects = site.projects | where: "selected", "true" | sort: "importance" %}
+    
+    <!-- 循环输出每一个项目 -->
+    {% for project in selected_projects %}
+      <!-- 
+         调用 projects_horizontal.liquid 
+         它会自动读取 project.img 显示图片
+         读取 project.description 显示描述
+         并自动排版成“图片+文字”的横向卡片
+      -->
+      {% include projects_horizontal.liquid %}
+    {% endfor %}
+    
+  </div>
+</div>
