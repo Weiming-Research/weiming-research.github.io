@@ -456,9 +456,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-radioformer",
+          title: 'RadioFormer',
+          description: "RadioFormer: One Physics-Guided Transformer to Unify 2D and 3D Radio Map Construction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/radioformer/";
             },},{
