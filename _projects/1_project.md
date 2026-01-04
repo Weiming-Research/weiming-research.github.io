@@ -1,37 +1,34 @@
 ---
 layout: page
-title: Project Title  # 项目标题
-description: A short description # 简短描述（显示在卡片上）
-img: assets/img/12.jpg # 项目封面图
+title: RadioFormer
+description: A unified physics-guided framework for real-time 2D/3D radio map construction with 2500× inference speedup.
+img: assets/img/radioformer_cover.jpg
 importance: 1
 category: work
 ---
 
-<!-- 1. 文字介绍区域 -->
-这里写你的项目介绍。支持 Markdown 语法。
-比如：这是我关于深度学习的研究项目，我们提出了一个新的架构...
+Radio maps, which model wireless signal quality across different locations, are essential for efficient network planning and positioning. This project aims to generate high-quality 2D and 3D radio maps based on environmental layouts. However, traditional deep learning approaches often fail to understand the underlying physical principles of signal propagation, making them ineffective in unknown environments. Additionally, existing 3D generation models are typically too slow for real-time application.
 
-<!-- 2. 图片展示区域（一行放2张图） -->
+To address these challenges, we propose **RadioFormer**, a unified framework for both 2D and 3D radio map construction. Our solution uses an efficient compression technique to treat complex 3D data as stacked 2D layers, avoiding high computational costs. Unlike standard models that generate images based on simple pixel statistics, RadioFormer predicts signals by following the actual propagation path of radio waves. This physics-guided approach ensures the results align with physical laws and maintain vertical consistency. Consequently, RadioFormer achieves state-of-the-art accuracy and operates **2500 times faster** than comparable diffusion models, enabling real-time deployment in new environments.
+
 <div class="row">
-    <!-- 左边的图片 -->
+    <!-- 图1: Framework (Left) -->
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="图片说明1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/Urban3D-framework.p png" title="RadioFormer framework" class="img-fluid rounded z-depth-1" %}
     </div>
-    
-    <!-- 右边的图片 -->
+
+    <!-- 图2: Mechanism (Middle) -->
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="图片说明2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/Urban3D-blocking.png" title="Wavefront propagation" class="img-fluid rounded z-depth-1" %}
+    </div>
+
+    <!-- 图3: Visualization (Right) -->
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/0_37_shortest_path_tree.png" title="Propagation order" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
-<!-- 图片下方的说明文字（可选） -->
+<!-- 统一的图注 -->
 <div class="caption">
-    这里是上面两张图片的统一说明。
-</div>
-
-<!-- 3. 如果还有更多图片（比如再放一张大图） -->
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="图片说明3" class="img-fluid rounded z-depth-1" %}
-    </div>
+    Left: The simplified RadioFormer framework. Middle: Wavefront propagation mechanism. Right: Visualization of the propagation order.
 </div>
