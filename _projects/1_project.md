@@ -5,6 +5,8 @@ description: A unified physics-guided framework for real-time 2D/3D radio map co
 img: assets/img/radioformer_cover.jpg
 importance: 1
 category: work
+
+selected: true
 ---
 
 Radio maps, which model wireless signal quality across different locations, are essential for efficient network planning and positioning. This project aims to generate high-quality 2D and 3D radio maps based on environmental layouts. However, traditional deep learning approaches often fail to understand the underlying physical principles of signal propagation, making them ineffective in unknown environments. Additionally, existing 3D generation models are typically too slow for real-time application.
