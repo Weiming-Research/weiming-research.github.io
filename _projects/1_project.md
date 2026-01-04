@@ -1,7 +1,7 @@
----
+<img width="1688" height="84" alt="image" src="https://github.com/user-attachments/assets/b1e99b42-a111-4b37-86da-9971ba446c4f" />---
 layout: page
 title: RadioFormer
-description: A unified physics-guided framework for real-time 2D/3D radio map construction with 2500× inference speedup.
+description: RadioFormer: One Physics-Guided Transformer to Unify 2D and 3D Radio Map Construction.
 importance: 1
 category: work
 
@@ -20,7 +20,7 @@ To address these challenges, we propose **RadioFormer**, a unified framework for
 
     <!-- 图2: Mechanism (Middle) -->
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Urban3D-blocking.png" title="Wavefront propagation" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/wavefront.png" title="Wavefront propagation" class="img-fluid rounded z-depth-1" %}
     </div>
 
     <!-- 图3: Visualization (Right) -->
@@ -31,5 +31,5 @@ To address these challenges, we propose **RadioFormer**, a unified framework for
 
 <!-- 统一的图注 -->
 <div class="caption">
-    Left: The simplified RadioFormer framework. Middle: Wavefront propagation mechanism. Right: Visualization of the propagation order.
+    Left: The RadioFormer framework. Middle: Wavefront propagation mechanism. Right: Visualization of the propagation order.
 </div>
