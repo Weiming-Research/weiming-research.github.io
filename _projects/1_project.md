@@ -16,7 +16,7 @@ To address these challenges, we propose **RadioFormer**, a unified framework for
 <div class="row">
     <!-- 图1: Framework (Left) -->
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Urban3D-framework.p png" title="RadioFormer framework" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/Urban3D-framework.png" title="RadioFormer framework" class="img-fluid rounded z-depth-1" %}
     </div>
 
     <!-- 图2: Mechanism (Middle) -->
@@ -26,7 +26,7 @@ To address these challenges, we propose **RadioFormer**, a unified framework for
 
     <!-- 图3: Visualization (Right) -->
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/0_37_shortest_path_tree.png" title="Propagation order" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/propagation_visualization.png" title="Propagation order" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
