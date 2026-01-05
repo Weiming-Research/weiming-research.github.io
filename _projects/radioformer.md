@@ -2,7 +2,7 @@
 layout: page
 title: RadioFormer
 description: "RadioFormer: One Physics-Guided Transformer to Unify 2D and 3D Radio Map Construction. 
-Radio maps, which model wireless signal quality across different locations, are essential for efficient network planning and positioning. This project aims to generate high-quality 2D and 3D radio maps based on environmental layouts. However, traditional deep learning approaches often fail to understand the underlying physical principles of signal propagation, making them ineffective in unknown environments. Additionally, existing 3D generation models are typically too slow for real-time application."
+A unified, physics-guided framework for 2D/3D radio map construction that achieves SOTA accuracy and operates 2500× faster than diffusion models."
 importance: 1
 img: assets/img/radioformer.png
 category: work
