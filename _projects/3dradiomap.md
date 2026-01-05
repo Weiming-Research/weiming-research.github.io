@@ -1,8 +1,7 @@
 ---
 layout: page
 title: 3D Radio Map Dataset
-description: "3D Radio Map Dataset Generation
-Current publicly available datasets are limited to 2D radio maps and primarily provide RSS information. Proposed dataset addresses this limitation by constructing a 3D radio map with enriched data attributes."
+description: "Addressing the lack of vertical data in current research, this dataset offers high-resolution 3D maps with rich attributes (RSS, DoA, AoA, ToA), enabling precise environmental perception for drone operations."
 img: assets/img/raytracing.png
 importance: 2
 category: work
