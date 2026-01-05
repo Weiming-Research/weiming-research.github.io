@@ -27,7 +27,7 @@ latest_posts:
 Welcome! I am a research assistant at WISELab, Chinese University of Hong Kong, Shenzhen.
 
 <h2>
-  <a href="{{ '/projects/' | relative_url }}" style="color: inherit;">selected projects</a>
+  <a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Selected projects</a>
 </h2>
 
 <!-- Selected Projects 内容区域 -->
