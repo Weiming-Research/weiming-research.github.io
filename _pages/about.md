@@ -12,7 +12,7 @@ profile:
     <a href="/assets/pdf/Resume_weiming.pdf" target="_blank">Résumé/CV</a>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -30,7 +30,7 @@ Welcome! I am a research assistant at WISELab, Chinese University of Hong Kong, 
   <a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Selected projects</a>
 </h2>
 
-<!-- Selected Projects 内容区域 -->
+<!-- selected Projects 内容区域 -->
 <div class="projects">
   <!-- 创建一个 Grid 容器，强制让卡片竖向排列 -->
   <div class="row row-cols-1"> 
