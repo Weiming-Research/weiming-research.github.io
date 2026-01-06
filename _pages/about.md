@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "<a href='http://chenjunting.org'>WISELab</a>."
+subtitle: "Research Assistant @ <a href='https://www.cuhk.edu.cn/en'>Chinese University of Hong Kong, Shenzhen</a>."
 
 profile:
   align: right
@@ -24,7 +24,16 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Welcome! I am a research assistant at WISELab, Chinese University of Hong Kong, Shenzhen.
+Welcome! I am a Research Assistant at <a href="http://chenjunting.org" target="_blank">WISELab</a>, The Chinese University of Hong Kong, Shenzhen. I am fortunate to be advised by <a href="https://sse.cuhk.edu.cn/en/faculty/chenjunting" target="_blank">Prof. Junting Chen</a>. Previously, I had the opportunity to intern at <a href="https://www.kaust.edu.sa/en/" target="_blank">KAUST</a>, working under <a href="https://cemse.kaust.edu.sa/profiles/tareq-al-naffouri" target="_blank">Prof. Tareq Al-Naffouri</a> in the <a href="https://isl.kaust.edu.sa" target="_blank">Information Science Lab</a>.
+
+Before that, I earned B.Eng. in Intelligence Science and Technology from <a href="https://en.shu.edu.cn" target="_blank">Shanghai University</a>. During my undergraduate studies, I was mentored by <a href="https://liyanma-shu.github.io" target="_blank">Prof. Liyan Ma</a> and <a href="https://scie-ce.shu.edu.cn/info/1091/1075.htm" target="_blank">Prof. Qinghua Huang</a>.
+
+My research aims to push the frontiers of AI through **Physics-inspired Large Language Models**. Currently, I focus on applying these techniques to wireless communications and acoustic sensing, with specific interests in:
+<ul>
+    <li>LLM-based Radio Map Learning and Applications</li>
+    <li>Dynamic 3D Communications</li>
+    <li>Sound Event Localization and Detection</li>
+</ul>
 
 <h2>
   <a href="{{ '/projects/' | relative_url }}" style="color: inherit;">selected projects</a>
