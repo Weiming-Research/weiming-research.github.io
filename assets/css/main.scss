@@ -6,6 +6,8 @@
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
 @import
   "variables",
   "themes",
@@ -24,32 +26,35 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
+/* 定义变量，方便统一管理 (Sass 方式) */
+$font-heading: 'Lato', sans-serif;
+$font-body:    'Lora', serif;
 
-/* 引入 Lora (正文) 和 Lato (标题) */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
-
-/* 标题使用无衬线 Lato */
-h1, h2, h3, h4, h5, h6, nav, .card-title {
-  font-family: 'Lato', sans-serif !important;
-}
-
-/* 正文使用衬线 Lora (像打印出来的论文) */
-body, p, .card-text, li {
-  font-family: 'Lora', serif !important;
-}
-
-/* 稍微增加一点字间距，让阅读更轻松，减少拥挤感 */
+/* 全局正文：使用 Lora */
 body {
-  letter-spacing: 0.01em; 
+  font-family: $font-body;
+  font-size: 1.05rem; /* Lora 字号偏小，微调大一点 */
+  line-height: 1.6;   /* 增加行高，增加学术优雅感 */
 }
 
-/* =======================================================
-   3. 专门设置 Quote (名言) 的样式
-   ======================================================= */
-/* 这里的类名对应之前给你的 HTML 代码 */
-.quote-text {
-  font-family: 'Inter', sans-serif; /* 也可以换成 'Georgia', serif 让名言更有格调 */
-  font-style: italic !important;    /* 强制斜体 */
-  font-weight: 300;                 /* 字重变细，更精致 */
-  color: #6c757d;                   /* 灰色 */
+/* 标题、导航、卡片标题：使用 Lato */
+h1, h2, h3, h4, h5, h6,
+nav, .navbar, 
+.card-title,
+strong, b {
+  font-family: $font-heading;
+}
+
+/* 专门定义的 Quote 样式类 */
+.intro-quote {
+  font-family: $font-body; /* 继承 Lora */
+  font-style: italic;      /* 斜体 */
+  font-weight: 400;        /* 正常字重 */
+  color: #666;             /* 深灰色 */
+  font-size: 0.95rem;      /* 字号 */
+  letter-spacing: 0.02em;  /* 字间距 */
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: left;      /* 左对齐 */
+  width: 100%;
 }
