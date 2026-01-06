@@ -24,7 +24,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Welcome! I am a Research Assistant at <a href="http://chenjunting.org" target="_blank">WISELab</a>, The Chinese University of Hong Kong, Shenzhen. I am fortunate to be advised by <a href="https://sse.cuhk.edu.cn/en/faculty/chenjunting" target="_blank">Prof. Junting Chen</a>. Previously, I had the opportunity to intern at <a href="https://www.kaust.edu.sa/en/" target="_blank">KAUST</a>, working under <a href="https://cemse.kaust.edu.sa/profiles/tareq-al-naffouri" target="_blank">Prof. Tareq Al-Naffouri</a> in the <a href="https://isl.kaust.edu.sa" target="_blank">Information Science Lab</a>.
+Welcome! I am a Research Assistant at <a href="http://chenjunting.org" target="_blank">WISELab</a>, <a href="https://www.cuhk.edu.cn/en" target="_blank">CUHK-Shenzhen</a>. I am fortunate to be advised by <a href="https://sse.cuhk.edu.cn/en/faculty/chenjunting" target="_blank">Prof. Junting Chen</a>. Previously, I had the opportunity to intern at <a href="https://www.kaust.edu.sa/en/" target="_blank">KAUST</a>, working under <a href="https://cemse.kaust.edu.sa/profiles/tareq-al-naffouri" target="_blank">Prof. Tareq Al-Naffouri</a> in the <a href="https://isl.kaust.edu.sa" target="_blank">Information Science Lab</a>.
 
 Before that, I earned B.Eng. in Intelligence Science and Technology from <a href="https://en.shu.edu.cn" target="_blank">Shanghai University</a>. During my undergraduate studies, I was mentored by <a href="https://liyanma-shu.github.io" target="_blank">Prof. Liyan Ma</a> and <a href="https://scie-ce.shu.edu.cn/info/1091/1075.htm" target="_blank">Prof. Qinghua Huang</a>.
 
@@ -69,15 +69,15 @@ My research aims to push the frontiers of AI through **Physics-inspired Large La
   }
   
   /* 2. 将论文文字内容区域强制拉宽到 100% */
-  /* 注意：al-folio 默认通常是用 col-sm-8，我们要把它变成 100% */
   .publications .row .col-sm-8 {
     flex: 0 0 100% !important;
     max-width: 100% !important;
-    padding-left: 0 !important; /* 去掉不必要的左边距 */
-    padding-right: 0 !important;
+    
+    /* 关键修改：删除了 padding: 0 的设置 */
+    /* 让它保留 Bootstrap 默认的 15px padding，从而与上方的 Projects 对齐 */
   }
 
-  /* 3. (可选) 调整整体容器的左右边距，确保和上面的 Projects 严格对齐 */
-  /* 如果发现论文列表比上面的内容缩进更多，可以尝试打开下面这行 */
-  /* .publications { margin-left: 0 !important; margin-right: 0 !important; } */
+  /* 3. (可选) 如果看起来还是有一点点不对齐，可以强制重置 Row 的 margin */
+  /* 通常不需要这步，但如果上面改了还不行，请把下面这行注释解开 */
+  /* .publications .row { margin-left: 0 !important; margin-right: 0 !important; } */
 </style>
