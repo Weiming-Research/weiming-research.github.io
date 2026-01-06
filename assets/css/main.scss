@@ -23,3 +23,33 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+
+/* 引入 Lora (正文) 和 Lato (标题) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* 标题使用无衬线 Lato */
+h1, h2, h3, h4, h5, h6, nav, .card-title {
+  font-family: 'Lato', sans-serif !important;
+}
+
+/* 正文使用衬线 Lora (像打印出来的论文) */
+body, p, .card-text, li {
+  font-family: 'Lora', serif !important;
+}
+
+/* 稍微增加一点字间距，让阅读更轻松，减少拥挤感 */
+body {
+  letter-spacing: 0.01em; 
+}
+
+/* =======================================================
+   3. 专门设置 Quote (名言) 的样式
+   ======================================================= */
+/* 这里的类名对应之前给你的 HTML 代码 */
+.quote-text {
+  font-family: 'Inter', sans-serif; /* 也可以换成 'Georgia', serif 让名言更有格调 */
+  font-style: italic !important;    /* 强制斜体 */
+  font-weight: 300;                 /* 字重变细，更精致 */
+  color: #6c757d;                   /* 灰色 */
+}
