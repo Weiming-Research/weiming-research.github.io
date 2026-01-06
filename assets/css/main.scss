@@ -26,35 +26,54 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-/* 定义变量，方便统一管理 (Sass 方式) */
-$font-heading: 'Lato', sans-serif;
-$font-body:    'Lora', serif;
+/* =======================================================
+   3. Custom Overrides
+   ======================================================= */
+$font-heading: 'Lato', sans-serif; /* 无衬线：用于标题、导航、侧边栏 */
+$font-body:    'Lora', serif;      /* 衬线：用于正文阅读 */
 
-/* 全局正文：使用 Lora */
+/* --- 正文设置 --- */
 body {
   font-family: $font-body;
-  font-size: 1.05rem; /* Lora 字号偏小，微调大一点 */
-  line-height: 1.6;   /* 增加行高，增加学术优雅感 */
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-/* 标题、导航、卡片标题：使用 Lato */
+/* --- 标题设置 (注意：这里删除了 strong 和 b) --- */
 h1, h2, h3, h4, h5, h6,
 nav, .navbar, 
-.card-title,
-strong, b {
+.card-title {
   font-family: $font-heading;
 }
 
-/* 专门定义的 Quote 样式类 */
+/* --- 关键修复：加粗文字继承父元素字体 --- */
+/* 这样正文里的加粗就会保持 Lora，标题里的加粗保持 Lato */
+strong, b {
+  font-family: inherit; 
+  font-weight: 700; /* 确保足够粗 */
+}
+
+/* --- 修复 Profile (侧边栏) --- */
+.profile {
+  font-family: $font-heading; /* 让侧边栏信息使用 Lato，看起来更现代清晰 */
+  /* 如果你希望侧边栏也用书卷气的 Lora，把上面改成 $font-body */
+}
+
+.profile .more-info {
+  font-family: $font-heading !important;
+  font-size: 0.9rem;
+}
+
+/* --- Quote 样式 --- */
 .intro-quote {
-  font-family: $font-body; /* 继承 Lora */
-  font-style: italic;      /* 斜体 */
-  font-weight: 400;        /* 正常字重 */
-  color: #666;             /* 深灰色 */
-  font-size: 0.95rem;      /* 字号 */
-  letter-spacing: 0.02em;  /* 字间距 */
+  font-family: $font-body;
+  font-style: italic;
+  font-weight: 400;
+  color: #666;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  text-align: left;      /* 左对齐 */
+  text-align: left;
   width: 100%;
 }
