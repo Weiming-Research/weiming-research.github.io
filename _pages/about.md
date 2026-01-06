@@ -35,13 +35,10 @@ My research aims to push the frontiers of AI through **Physics-inspired Large La
     <li>Sound Event Localization and Detection</li>
 </ul>
 
-<div class="quote mt-4 mb-4">
-  <blockquote class="blockquote text-center">
-    <p class="mb-0" style="font-style: italic; font-size: 1.1rem;">
-      "Curiosity evokes 'care'; it evokes the care one takes of what exists and what might exist."
-    </p>
-    <footer class="blockquote-footer mt-2">Michel Foucault</footer>
-  </blockquote>
+<div class="text-center mt-3 mb-5">
+  <small class="text-muted font-italic">
+    "Curiosity evokes 'care'; it evokes the care one takes of what exists and what might exist." &mdash; Michel Foucault
+  </small>
 </div>
 
 <h2>
