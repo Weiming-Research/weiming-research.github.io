@@ -51,3 +51,24 @@ Welcome! I am a research assistant at WISELab, Chinese University of Hong Kong, 
     
   </div>
 </div>
+
+<style>
+  /* 1. 隐藏自动生成的论文列表左侧的缩略图/徽章列 */
+  .publications .row .abbr,
+  .publications .row .preview {
+    display: none !important;
+  }
+  
+  /* 2. 将论文文字内容区域强制拉宽到 100% */
+  /* 注意：al-folio 默认通常是用 col-sm-8，我们要把它变成 100% */
+  .publications .row .col-sm-8 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important; /* 去掉不必要的左边距 */
+    padding-right: 0 !important;
+  }
+
+  /* 3. (可选) 调整整体容器的左右边距，确保和上面的 Projects 严格对齐 */
+  /* 如果发现论文列表比上面的内容缩进更多，可以尝试打开下面这行 */
+  /* .publications { margin-left: 0 !important; margin-right: 0 !important; } */
+</style>
