@@ -35,6 +35,15 @@ My research aims to push the frontiers of AI through **Physics-inspired Large La
     <li>Sound Event Localization and Detection</li>
 </ul>
 
+<div class="quote mt-4 mb-4">
+  <blockquote class="blockquote text-center">
+    <p class="mb-0" style="font-style: italic; font-size: 1.1rem;">
+      "Curiosity evokes 'care'; it evokes the care one takes of what exists and what might exist."
+    </p>
+    <footer class="blockquote-footer mt-2">Michel Foucault</footer>
+  </blockquote>
+</div>
+
 <h2>
   <a href="{{ '/projects/' | relative_url }}" style="color: inherit;">selected projects</a>
 </h2>
