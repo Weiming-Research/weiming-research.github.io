@@ -35,10 +35,8 @@ My research aims to push the frontiers of AI through **Physics-inspired Large La
     <li>Sound Event Localization and Detection</li>
 </ul>
 
-<div class="text-center mt-3 mb-5">
-  <small class="quote-text">
+<div class="intro-quote">
     "Curiosity evokes 'care'; it evokes the care one takes of what exists and what might exist." &mdash; Michel Foucault
-  </small>
 </div>
 
 <h2>
